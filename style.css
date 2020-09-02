@@ -1,0 +1,147 @@
+/* Variables */
+:root{
+    --pale-blu:hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue:  hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+    --menu-heigth: 200px;
+    --storage-heigth: 160px;
+    --card-padding: 40px
+}
+/* GENERAL STYLES*/
+html  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--pale-blu);
+}
+.bold {
+    font-weight: 700;
+}
+.mainContainer {
+    min-height: 100vh;
+    background-image: url("./images/bg-mobile.png");
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 24px;
+}
+.menu{
+    height: var(--menu-heigth);
+    background-color: var(--dark-blue );
+    border-radius: 10px 100px 10px 10px;
+    padding: var(--card-padding);
+    margin-bottom: 16px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.storage {
+    height: var(--storage-heigth);
+    background-color: var(--dark-blue );
+    border-radius: 10px;
+}
+.menuButtons{
+    display: flex;
+    flex-flow: row;    
+}
+.menuButtonsButton{
+    margin-right: 20px;
+    transition: background-color 0.5s ease-in;
+}
+.menuButtonsButton:hover{
+    background-color: var(--pale-blue );
+    cursor: pointer;
+}
+
+.menuButtonsButton:last-child{
+    margin-right: 0;
+}
+.menuButtonsButton{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: var(--very-dark-blue);
+    justify-content: center;
+    align-items: center;
+}
+.storage{
+    padding: 32px 24px 54px 24px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.storageText {
+    
+    margin-bottom: 12px;
+}
+.storageInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: baseline;
+}
+.storageBar{
+    width: 100%;
+    height: 18px;
+    border-radius: 9px;
+    background-color: var(--very-dark-blue);
+    border: 2px solid var(--very-dark-blue);
+    position: relative;
+  
+}
+
+.storageBarProgress{
+    position: absolute;
+    height: 100%;
+    border-radius: 7px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f9ce68+0,ff2193+100 */
+    background: #f9ce68; /* Old browsers */
+    background: -moz-linear-gradient(left,  #f9ce68 0%, #ff2193 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #f9ce68 0%,#ff2193 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #f9ce68 0%,#ff2193 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9ce68', endColorstr='#ff2193',GradientType=1 ); /* IE6-9 */
+    content: "";
+}
+.storageBarProgress::after{
+    position: absolute;
+    right: 0;
+    margin: 2px;
+    z-index: 2;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color:#fff ;
+    content: "";
+}
+
+.storageSummary{
+    position:absolute;
+    bottom: -35px;
+    background-color: #fff;
+    color: var(--grayish-blue);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.storageSummary span {
+    color: var(--very-dark-blue);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+/* FOOTER  */
+
+footer {
+    padding: 16px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

@@ -7,25 +7,41 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo data storage component</title>
+  <!-- STYLES  -->
+  <!-- Fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Custom classes  -->
+  <link rel="stylesheet" href="style.css" >
+  
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="mainContainer">
+    <div class="menu">
+      <h1 class="menuLogo"><img src="images/logo.svg" alt="Fylo"></h1>
+      <ul class="menuButtons">
+        <li class="menuButtonsButton"><img src="images/icon-document.svg" alt="document"></li>
+        <li class="menuButtonsButton"><img src="images/icon-folder.svg" alt="folder"></li>
+        <li class="menuButtonsButton"><img src="images/icon-upload.svg" alt="upload"></li>
+      </ul>
+    </div>
+    <div class="storage">
+      <div id="storageText" class="storageText"></div>
+      <div class="storageBar" >
+        <div id="storageBarProgress" class="storageBarProgress" ></div>
+      </div>
+      
+      <div class="storageInfo">
+        <div id="storageInfoMin" class="bold"></div>
+        <div id="storageInfoMax" class="bold"></div>
+      </div>
+      <div id="storageSummary" class="storageSummary"></div>
+    </div>
   </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/giovanni-ranzato-48713b12b/">Giovanni Ranzato</a>.
+  </footer>
 </body>
+<script src="./functions.js" ></script>
 </html>
