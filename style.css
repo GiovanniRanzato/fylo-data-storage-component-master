@@ -25,6 +25,10 @@ html  * {
 .mainContainer {
     min-height: 100vh;
     background-image: url("./images/bg-mobile.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -154,8 +158,6 @@ footer {
         background-color: var(--very-dark-blue);
         background-image: url("./images/bg-desktop.png");
         background-size: 100%;
-        background-position-y: bottom;
-        background-repeat: no-repeat;
         flex-flow: row;
         align-items: center;
     }
